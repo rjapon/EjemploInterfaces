@@ -16,7 +16,7 @@ import java.awt.event.MouseListener;
  *
  * @author Asus
  */
-public class EsquemaRaton1 implements MouseListener{
+public class EsquemaRaton implements MouseListener{
 
     @Override
     public void mouseClicked(MouseEvent evento) {
@@ -69,6 +69,7 @@ public class EsquemaRaton1 implements MouseListener{
         //MiMarco.setSize(500, 130);
         //MiMarco.setTitle("Ventana con campos de texto");
         //MiMarco.setVisible(true);
+        
     }
     
     @Override
