@@ -29,29 +29,38 @@ public class EjemploInterfaces {
     public static void main(String[] args) {
 
 //        =========================================================//
+
 //        1er Ejemplo
 //        Frame miVentana = new Frame();
 //        miVentana.setSize(500,200);
 //        miVentana.setTitle("Mi ventana de ejemplo");
 //        miVentana.setVisible(true);
+
 //        =========================================================//
+
 //        MiVentana v1 = new MiVentana();
 //        MiVentana v2 = new MiVentana("Ventana 2");
 //        MiVentana v3 = new MiVentana("Ventana 3", 400, 200, 500, 200);
+
 //        =========================================================//
+
 //        Frame miMarco = new Frame();
 //        miMarco.setSize(500,200);
 //        miMarco.setTitle("Mi ventana de ejemlo");
 //        miMarco.setLocation(new Point(100,220));
 //        miMarco.setVisible(true);
+
 //        =========================================================//
+
 //        Frame miVentana = new Frame();
 //        Button boton1 = new Button("Hola");
 //        miVentana.setSize(300,200);
 //        miVentana.setTitle("Ventana con boton");
 //        miVentana.setVisible(true);
 //        miVentana.add(boton1);
+
 //        =========================================================//
+
 //        Frame marco = new Frame();
 //        FlowLayout posicionamientoSecuencial = new FlowLayout(FlowLayout.RIGHT);
 //        Panel miPanel = new Panel();
@@ -69,7 +78,9 @@ public class EjemploInterfaces {
 //        miPanel.add(botonPerimetro);
 //        miPanel.add(botonA);
 //        miPanel.add(botonB);
+
 //        =========================================================//
+
 //        Frame miVentana = new Frame();
 //        Panel miPanel = new Panel();
 //        FlowLayout posicionamientoSecuencial = new FlowLayout();
@@ -86,7 +97,9 @@ public class EjemploInterfaces {
 //        miVentana.setSize(300, 100);
 //        miVentana.setTitle("Ventana con flow layout");
 //        miVentana.setVisible(true);
+
 //        =========================================================//
+
 //        Frame miMarco = new Frame();
 //        Panel panelMenuNorte = new Panel();
 //        Panel panelGeneral = new Panel();
@@ -115,7 +128,9 @@ public class EjemploInterfaces {
 //        miMarco.setSize(400, 150);
 //        miMarco.setTitle("Ventana con BorderLayout");
 //        miMarco.setVisible(true);
+
 //        =========================================================//
+
 //        Frame miVentana = new Frame();
 //        Panel miPanel = new Panel();
 //        GridLayout matriz = new GridLayout(2, 3);
@@ -129,14 +144,18 @@ public class EjemploInterfaces {
 //        miVentana.setSize(300, 100);
 //        miVentana.setTitle("Ventana con GridLayout");
 //        miVentana.setVisible(true);
+
 //        =========================================================//
+
 //        Frame miMarco = new Frame();
 //        Label titulo = new Label("Notas ");
 //        miMarco.add(titulo);
 //        miMarco.setSize(500, 200);
 //        miMarco.setTitle("Ventana con etiqueta");
 //        miMarco.setVisible(true);
+
 //        =========================================================//
+
 //        Frame MiMarco = new Frame();
 //        Panel EntradaDatos = new Panel(new FlowLayout());
 //        Panel gen = new Panel();
@@ -152,126 +171,144 @@ public class EjemploInterfaces {
 //        MiMarco.setSize(500, 130);
 //        MiMarco.setTitle("Ventana con campos de texto");
 //        MiMarco.setVisible(true);
+
         //=========================================================//
-//        Frame miVentana = new Frame("Esquema de eventos");
-//        Panel miPanel = new Panel();
-//        Button botonH = new Button("Saludo");
-//        Button botonA = new Button("Despedida");
-//        miPanel.add(botonH);
-//        miPanel.add(botonA);
-//        miVentana.add(miPanel);
-//        miVentana.setSize(500, 200);
-//        miVentana.setVisible(true);
-//        botonH.addMouseListener(new EsquemaRaton());
-//        botonA.addMouseListener(new EsquemaRaton());
+        
+        
+        // INTERRUPCIONES Y ESQUEMA DE RATON
+        
+        
         //=========================================================//
-//        final int NUM_OPCIONES = 12;
-//        Label mensaje = new Label("Mensaje asociado al botón pulsado");
-//        Button[] botones = new Button[NUM_OPCIONES];
-//        for (int i = 0; i < NUM_OPCIONES; i++) {
-//            botones[i] = new Button("Opcion " + i);
-//            if (i < 10) {
-//                botones[i].setName("0" + i);
-//            } else {
-//                botones[i].setName(String.valueOf(i));
-//            }
-//        }
-//        Frame miVentana = new Frame("Prueba eventos de raton");
-//        Panel panelPrincipal = new Panel(new GridLayout(NUM_OPCIONES + 1, 1));
-//        panelPrincipal.add(mensaje);
-//        for (int i = 0; i < NUM_OPCIONES; i++) {
-//            panelPrincipal.add(botones[i]);
-//        }
-//        miVentana.add(panelPrincipal);
-//        miVentana.setSize(400, 600);
-//        miVentana.setVisible(true);
-//        for (int i = 0; i < NUM_OPCIONES; i++) {
-//            botones[i].addMouseListener(new InterrupcionesDeRaton(mensaje));
-//        }
+        
+        Frame miVentana = new Frame("Esquema de eventos");
+        Panel miPanel = new Panel();
+        Button botonH = new Button("Saludo");
+        Button botonA = new Button("Despedida");
+        miPanel.add(botonH);
+        miPanel.add(botonA);
+        miVentana.add(miPanel);
+        miVentana.setSize(500, 200);
+        miVentana.setVisible(true);
+        botonH.addMouseListener(new EsquemaRaton());
+        botonA.addMouseListener(new EsquemaRaton());
+
         //=========================================================//
-//        Frame miVentana = new Frame("Prueba eventos de raton");
-//        
-//        Panel miPanel = new Panel();
-//        Button boton1 = new Button("Silencio");
-//        Button boton2 = new Button("Máquina de escribir");
-//        
-//        miPanel.add(boton1);
-//        miPanel.add(boton2);
-//        miVentana.add(miPanel);
-//        miVentana.setSize(400, 400);
-//        miVentana.setVisible(true);
-//        boton2.addKeyListener(new InterrupcionesDeTeclado());
+        
+        final int NUM_OPCIONES = 12;
+        Label mensaje = new Label("Mensaje asociado al botón pulsado");
+        Button[] botones = new Button[NUM_OPCIONES];
+        for (int i = 0; i < NUM_OPCIONES; i++) {
+            botones[i] = new Button("Opcion " + i);
+            if (i < 10) {
+                botones[i].setName("0" + i);
+            } else {
+                botones[i].setName(String.valueOf(i));
+            }
+        }
+        Frame miVentana2 = new Frame("Prueba eventos de raton");
+        Panel panelPrincipal = new Panel(new GridLayout(NUM_OPCIONES + 1, 1));
+        panelPrincipal.add(mensaje);
+        for (int i = 0; i < NUM_OPCIONES; i++) {
+            panelPrincipal.add(botones[i]);
+        }
+        miVentana2.add(panelPrincipal);
+        miVentana2.setSize(400, 600);
+        miVentana2.setVisible(true);
+        for (int i = 0; i < NUM_OPCIONES; i++) {
+            botones[i].addMouseListener(new InterrupcionesDeRaton(mensaje));
+        }
+
         //=========================================================//
-//        Frame miVentana = new Frame("Prueba eventos de ventana");
-//        miVentana.setSize(200, 100);
-//        miVentana.setVisible(true);
-//        Frame otraVentana = new Frame("Prueba eventos de ventana");
-//        otraVentana.setSize(100, 50);
-//        otraVentana.setLocation(200, 0);
-//        
-//        otraVentana.setVisible(true);
-//        miVentana.addWindowListener(new InterrupcionesDeVentana());
-//        otraVentana.addWindowListener(new InterrupcionesDeVentana());
+        
+        Frame miVentana3 = new Frame("Prueba eventos de raton");
+        
+        Panel miPanel3 = new Panel();
+        Button boton1 = new Button("Silencio");
+        Button boton2 = new Button("Máquina de escribir");
+        
+        miPanel3.add(boton1);
+        miPanel3.add(boton2);
+        miVentana3.add(miPanel3);
+        miVentana3.setSize(400, 400);
+        miVentana3.setVisible(true);
+        boton2.addKeyListener(new InterrupcionesDeTeclado());
+
         //=========================================================//
-//        Frame miVentana = new Frame("Prueba eventos de accion");
-//        Panel miPanel = new Panel(new GridLayout(3, 1));
-//
-//        Button boton = new Button("Etiqueta de boton");
-//        TextField campoDeTexto = new TextField("Campo de texto");
-//
-//        List lista = new List(3);
-//        lista.add("Opcion 1 de la lista");
-//        lista.add("Opcion 2 de la lista");
-//        lista.add("Opcion 3 de la lista");
-//        lista.add("Opcion 4 de la lista");
-//
-//        miPanel.add(boton);
-//        miPanel.add(campoDeTexto);
-//        miPanel.add(lista);
-//        
-//        boton.addActionListener(new InterrupcionesDeAccion());
-//        campoDeTexto.addActionListener(new InterrupcionesDeAccion());
-//        lista.addActionListener(new InterrupcionesDeAccion());
-//        
-//        miVentana.add(miPanel);
-//        miVentana.setSize(400, 200);
-//        miVentana.setVisible(true);
+        
+        Frame miVentana4 = new Frame("Prueba eventos de ventana");
+        miVentana4.setSize(200, 100);
+        miVentana4.setVisible(true);
+        Frame otraVentana = new Frame("Prueba eventos de ventana");
+        otraVentana.setSize(100, 50);
+        otraVentana.setLocation(200, 0);
+        
+        otraVentana.setVisible(true);
+        miVentana4.addWindowListener(new InterrupcionesDeVentana());
+        otraVentana.addWindowListener(new InterrupcionesDeVentana());
+
         //=========================================================//
-//        Frame miVentana = new Frame("Prueba eventos de enfoque");
-//        Panel miPanel = new Panel();
-//        Button boton1 = new Button("Componente 1");
-//        Button boton2 = new Button("Componente 2");
-//        
-//        miPanel.add(boton1);
-//        miPanel.add(boton2);
-//        
-//        miVentana.add(miPanel);
-//        miVentana.setSize(300, 200);
-//        miVentana.setVisible(true);
-//        boton2.addFocusListener(new InterrupcionesDeEnfoque());
+        
+        Frame miVentana5 = new Frame("Prueba eventos de accion");
+        Panel miPanel5 = new Panel(new GridLayout(3, 1));
+
+        Button boton = new Button("Etiqueta de boton");
+        TextField campoDeTexto = new TextField("Campo de texto");
+
+        List lista = new List(3);
+        lista.add("Opcion 1 de la lista");
+        lista.add("Opcion 2 de la lista");
+        lista.add("Opcion 3 de la lista");
+        lista.add("Opcion 4 de la lista");
+
+        miPanel5.add(boton);
+        miPanel5.add(campoDeTexto);
+        miPanel5.add(lista);
+        
+        boton.addActionListener(new InterrupcionesDeAccion());
+        campoDeTexto.addActionListener(new InterrupcionesDeAccion());
+        lista.addActionListener(new InterrupcionesDeAccion());
+        
+        miVentana5.add(miPanel5);
+        miVentana5.setSize(400, 200);
+        miVentana5.setVisible(true);
+        
+        //=========================================================//
+        
+        Frame miVentana6 = new Frame("Prueba eventos de enfoque");
+        Panel miPanel6 = new Panel();
+        Button botonE = new Button("Componente 1");
+        Button botonB = new Button("Componente 2");
+        
+        miPanel6.add(botonE);
+        miPanel6.add(botonB);
+        
+        miVentana6.add(miPanel6);
+        miVentana6.setSize(300, 200);
+        miVentana6.setVisible(true);
+        botonB.addFocusListener(new InterrupcionesDeEnfoque());
 
         //=========================================================//
 
-        Frame miVentana = new Frame("Prueba eventos de elemento");
-        Panel miPanel = new Panel(new GridLayout(4, 1));
+        Frame miVentana7 = new Frame("Prueba eventos de elemento");
+        Panel miPanel7 = new Panel(new GridLayout(4, 1));
         Checkbox diesel = new Checkbox("Diesel", true);
         Checkbox farosXenon = new Checkbox("Faros de Xenon", false);
         Checkbox llantasAleacion = new Checkbox("Llantas de aleacion", false);
         Checkbox pinturaMetalizada = new Checkbox("Pintura Metalizada", true);
         
-        miPanel.add(diesel);
-        miPanel.add(farosXenon);
-        miPanel.add(llantasAleacion);
-        miPanel.add(pinturaMetalizada);
+        miPanel7.add(diesel);
+        miPanel7.add(farosXenon);
+        miPanel7.add(llantasAleacion);
+        miPanel7.add(pinturaMetalizada);
         
         diesel.addItemListener(new InterrupcionesDeElemento());
         farosXenon.addItemListener(new InterrupcionesDeElemento());
         llantasAleacion.addItemListener(new InterrupcionesDeElemento());
         pinturaMetalizada.addItemListener(new InterrupcionesDeElemento());
         
-        miVentana.add(miPanel);
-        miVentana.setSize(400, 200);
-        miVentana.setVisible(true);
+        miVentana7.add(miPanel7);
+        miVentana7.setSize(400, 200);
+        miVentana7.setVisible(true);
 
     }
 }
