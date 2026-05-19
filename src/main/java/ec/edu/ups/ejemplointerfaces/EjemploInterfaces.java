@@ -7,8 +7,10 @@ import java.awt.Button;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Frame;
+import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.Panel;
+import java.awt.Point;
 import java.awt.TextField;
 
 /**
@@ -19,10 +21,40 @@ public class EjemploInterfaces {
 
     public static void main(String[] args) {
         
+        //=========================================================//
+        
+        //1er Ejemplo
+                   
+        //Frame miVentana = new Frame();
+        //miVentana.setSize(500,200);
+        //miVentana.setTitle("Mi ventana de ejemplo");
+        //miVentana.setVisible(true);
+        
+        //=========================================================//
+        
         //MiVentana v1 = new MiVentana();
         //MiVentana v2 = new MiVentana("Ventana 2");
         //MiVentana v3 = new MiVentana("Ventana 3", 400, 200, 500, 200);
         
+        //=========================================================//
+        
+        //Frame miMarco = new Frame();
+        //miMarco.setSize(500,200);
+        //miMarco.setTitle("Mi ventana de ejemlo");
+        //miMarco.setLocation(new Point(100,220));
+        //miMarco.setVisible(true);
+        
+        //=========================================================//
+        
+        //Frame miVentana = new Frame();
+        //Button boton1 = new Button("Hola");
+        
+        //miVentana.setSize(300,200);
+        //miVentana.setTitle("Ventana con boton");
+        //miVentana.setVisible(true);
+        
+        //miVentana.add(boton1);
+                
         //=========================================================//
         
         //Frame marco = new Frame();
@@ -49,6 +81,27 @@ public class EjemploInterfaces {
         //miPanel.add(botonPerimetro);
         //miPanel.add(botonA);
         //miPanel.add(botonB);
+        
+        //=========================================================//
+        
+        //Frame miVentana = new Frame();
+        //Panel miPanel = new Panel();
+        //FlowLayout posicionamientoSecuencial = new FlowLayout();
+        
+        //Button botonA = new Button("Primer botón");
+        //Button botonB = new Button("Segundo botón");
+        //Button botonC = new Button("Tercer botón");
+        //Button botonD = new Button("Cuarto botón");
+        
+        //miPanel.setLayout(posicionamientoSecuencial);
+        //miVentana.add(miPanel);
+        //miPanel.add(botonA);
+        //miPanel.add(botonB);
+        //miPanel.add(botonC);
+        //miPanel.add(botonD);
+        //miVentana.setSize(300, 100);
+        //miVentana.setTitle("Ventana con flow layout");
+        //miVentana.setVisible(true);
         
         //=========================================================//
         
@@ -84,8 +137,38 @@ public class EjemploInterfaces {
         //panelGeneral.add(botonCentro, BorderLayout.CENTER);
         
         //miMarco.setSize(400, 150);
-        //miMarco.setTitle("Mi pagina");
+        //miMarco.setTitle("Ventana con BorderLayout");
         //miMarco.setVisible(true);
+        
+        //=========================================================//
+        
+        //Frame miVentana = new Frame();
+        //Panel miPanel = new Panel();
+        //GridLayout matriz = new GridLayout(2, 3);
+        //Button[] botones = new Button[6];
+        
+        //for (int i = 0; i < 6; i++)
+            //botones[i] = new Button("Botón " + i);
+        
+        //miPanel.setLayout(matriz);
+        //for (int i = 0; i < 6; i++)
+            //miPanel.add(botones[i]);
+        
+        //miVentana.add(miPanel);
+        //miVentana.setSize(300, 100);
+        //miVentana.setTitle("Ventana con GridLayout");
+        //miVentana.setVisible(true);
+        
+        //=========================================================//
+        
+        Frame miMarco = new Frame();
+        Label titulo = new Label("Notas ");
+        
+        miMarco.add(titulo);
+        
+        miMarco.setSize(500,200);
+        miMarco.setTitle("Ventana con etiqueta");
+        miMarco.setVisible(true);
         
         //=========================================================//
         
@@ -95,16 +178,6 @@ public class EjemploInterfaces {
         //Panel gen = new Panel();
         //Panel abajo = new Panel();
         //BorderLayout puntosCardinales = new BorderLayout();
-        
-        //Button op1 = new Button("Opcion 1");
-        //Button op2 = new Button("Opcion 2");
-        //Button op3 = new Button("Opcion 3");
-        
-        //MiMarco.add(abajo);
-        
-        //abajo.add(op1);
-        //abajo.add(op2);
-        //abajo.add(op3);
 
         //TextField Nombre = new TextField(15);
         //TextField Apellidos = new TextField(60);
@@ -121,25 +194,25 @@ public class EjemploInterfaces {
         
         //=========================================================//
         
-        Frame miVentana = new Frame("Esquema de eventos");
-        Panel miPanel = new Panel();
+        //Frame miVentana = new Frame("Esquema de eventos");
+        //Panel miPanel = new Panel();
         
-        Button botonH = new Button("Saludo");
-        Button botonA = new Button("Despedida");
+        //Button botonH = new Button("Saludo");
+        //Button botonA = new Button("Despedida");
         
-        Button botonP = new Button("Prueba");
+        //Button botonP = new Button("Prueba");
         
-        miPanel.add(botonH);
-        miPanel.add(botonA);
-        miPanel.add(botonP);
+        //miPanel.add(botonH);
+        //miPanel.add(botonA);
+        //miPanel.add(botonP);
         
-        miVentana.add(miPanel);
-        miVentana.setSize(500,200);
-        miVentana.setVisible(true);
+        //miVentana.add(miPanel);
+        //miVentana.setSize(500,200);
+        //miVentana.setVisible(true);
         
-        botonH.addMouseListener(new EsquemaRaton1());
-        botonA.addMouseListener(new EsquemaRaton1());
-        botonP.addMouseListener(new EsquemaRaton2());
+        //botonH.addMouseListener(new EsquemaRaton1());
+        //botonA.addMouseListener(new EsquemaRaton1());
+        //botonP.addMouseListener(new EsquemaRaton2());
                 
     }
 }
